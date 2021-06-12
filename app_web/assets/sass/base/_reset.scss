@@ -1,0 +1,93 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	border: 0;
+	vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	display: block;
+	font-weight: 700;
+}
+
+
+input,
+textarea:focus {
+	outline: 0;
+	display: block;
+	background-color: white;
+}
+
+button:focus {
+	cursor: pointer;
+	outline: 0;
+}
+ol,
+ul {
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+img {
+	max-width: 100%;
+	border: 0;
+}
+
+
+
+
+body{
+    padding: 3% 5%;
+	background-color: white;
+}
+.haeder_main{
+ 	@include flex();
+	@media screen and (max-width: 560px) 
+    {
+		display: block;
+    }
+}
+main{
+    background: $primary_color_2;
+	width: 80%;
+
+	@media screen and (max-width: 768px) 
+    {
+		// overflow: scroll;
+		// height: 600px;
+		padding-bottom: 30px;
+    }
+	@media screen and (max-width: 560px) 
+    {
+		width: 100%;
+		margin-top: 5px;
+    }
+}
+
+
+main , footer{
+	border-radius: 9px;
+}
+.container{
+	padding: 0% 3%;
+}

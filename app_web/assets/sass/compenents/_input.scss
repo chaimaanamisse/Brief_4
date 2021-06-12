@@ -1,0 +1,15 @@
+input{
+    width: 90%;
+    height: 50Px;
+    border-radius: 7px;
+    background-color: white;
+    margin-bottom: 35px;
+    border: 1px solid black;
+    padding: 10px;
+}
+::placeholder{
+    padding-left: 10px;
+    font-size: 12px;
+    font-family: 'poping-Regular';
+    color: $primary_color_3;
+}

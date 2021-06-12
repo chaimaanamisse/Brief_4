@@ -1,0 +1,101 @@
+.login{
+    .zone_main_login{
+
+        @include flex();
+        .animation_img{
+            img{
+                width: 75%;
+            }
+        }
+        
+    form{
+        background-color: $primary_color_4 ;
+        border-radius: 7px ;
+        width: 40%;
+        height: 550px;
+        padding: 5% 2%;
+        margin-top: 20px;
+        text-align: center;
+        .checkout{
+            display: flex;
+            align-items: center;
+            .input_data{
+                width: 7%;
+                margin-bottom: 0px;
+            }
+            p{
+                padding-left: 10px;
+            }
+        }
+        .btn_form{
+            text-align: -webkit-right;
+            button {
+                padding: 11px 43px;
+                &:hover{
+                    @include button(-5px -5px 0px 1px black);
+                }
+            }
+            }
+
+    }
+    p {
+        text-align: end;
+    }
+    }
+    @media screen and (max-width: 1280px) {
+        .zone_main_login{
+            .animation_img{
+                img{
+                    width: 90%;
+                }
+            }
+            form{
+                width: 65%;
+                height: 500px;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .zone_main_login{
+            display:grid;
+            .animation_img{
+                order: 1;
+                img{
+                    width: 100%;
+                }
+            }
+            form{
+                order: 0;
+                @include centred();
+            }
+        }
+    }
+    @media screen and (max-width: 560px) 
+    {
+        .zone_main_login{
+            .animation_img{
+                img{
+                    width: 100%;
+                }
+            }
+            form{
+                width: 90%;
+                height: 450px;
+            }
+            
+    }
+
+}
+}
+#input{
+    width: 44%;
+    height: 42px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    background-color: $primary_color_2;
+    color: white;
+    &:focus{
+        outline: none;
+    }
+}
